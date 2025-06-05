@@ -1,33 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Тень и свет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лендинг</title>
   <style>
     body {
       margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
       background-color: #000;
+    }
+    .hero {
+      background: url('image.jpg') center/cover no-repeat;
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      text-align: center;
     }
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
-      animation: fadeIn 2s ease-out;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .cta {
+      margin-top: 2rem;
+    }
+    .cta a {
+      padding: 0.75rem 1.5rem;
+      background-color: #ff6a00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .cta a:hover {
+      background-color: #ff8c42;
+    }
+    .features {
+      padding: 4rem 1rem;
+      background: #111;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .feature {
+      flex: 1 1 250px;
+      max-width: 300px;
+      margin: 1rem;
+      background: #222;
+      padding: 1rem;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <img src="image.jpg" alt="Силуэт руки с гирляндой на фоне" />
+  <section class="hero">
+    <h1>Добро пожаловать</h1>
+    <p>Это демонстрационный лендинг. Здесь могло бы быть описание вашего продукта или услуги.</p>
+    <div class="cta"><a href="#">Попробовать</a></div>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h2>Особенность 1</h2>
+      <p>Краткое описание первой особенности продукта.</p>
+    </div>
+    <div class="feature">
+      <h2>Особенность 2</h2>
+      <p>Краткое описание второй особенности продукта.</p>
+    </div>
+    <div class="feature">
+      <h2>Особенность 3</h2>
+      <p>Краткое описание третьей особенности продукта.</p>
+    </div>
+  </section>
 </body>
 </html>
